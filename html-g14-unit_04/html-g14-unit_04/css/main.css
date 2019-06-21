@@ -1,0 +1,181 @@
+/* main.css */
+
+/* a. Webfonts and Icon fonts
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,800i&display=swap&subset=cyrillic-ext");
+
+
+@import url("../fontawesome/css/all.min.css");
+
+/* b. Reset
+      Adapted from:
+      Normalize.css - https://github.com/necolas/normalize.css/
+      HTML5 Doctor Reset - html5doctor.com/html-5-reset-stylesheet/
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   outline: 0;
+   font-size: 100%;
+   vertical-align: baseline;
+   background: transparent;
+}
+
+/* c. Default and Basic Styles
+      Adapted from:
+      Skeleton CSS Framework - http://www.getskeleton.com/
+      Typeplate Typographic Starter Kit - http://typeplate.com/
+*/
+
+*,
+*:before,
+*:after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+  
+html, * {
+    font-family: 'Open Sans', sans-serif;
+}
+  
+body {
+    margin: 0;
+    color: #2e3440;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Typography */
+
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+    margin: 0.75 0.5;
+    font-weight: 500;
+}
+  
+h1 {
+    font-size: 2.4em;
+}
+  
+h2 {
+    font-size: 1.8em;
+}
+  
+h3 {
+    font-size: 1.6em;
+}
+  
+strong {
+    font-weight: 700;
+}
+
+/* Navigation */
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 0.75rem;
+    width: 100%;
+    
+}
+
+.cf {
+    clear: both;
+    display: block;
+    content: '';
+}
+
+.footer {
+    width: 100%;
+	padding: 0;
+	font-size: 12px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #717171;
+	text-align: center;
+    border-top: 1px solid #CECECE;
+    background: #f8f8f8;
+}
+
+.footer .copyright {
+    color: #bbb;
+    font-size: 0.9em;
+    margin: 2em 0 0 0;
+    padding: 0;
+    text-align: center;
+}
+  
+.footer .copyright li {
+    border-left: solid 1px rgba(144, 144, 144, 0.25);
+    margin-left: 1.5em;
+    padding-left: 1.5em;
+}
+  
+.footer li {
+    display: inline-block;
+    list-style: none;
+}
+
+
+.float-right  {
+    float: right;   
+    margin: 0 0 0 15px;
+    width: 300px;
+}
+
+.float-left {
+    float: left;   
+    margin: 0 15px 0 0;
+    width: 300px;
+}
+
+.footer .footer-socials {
+    margin: 60px 0 20px;
+    text-align: center;
+}
+
+.footer .footer-socials a {
+	display: inline-block;
+	margin-right: 5px;
+	background-color: #002e5b;
+	color: #fff;
+	font-size: 20px;
+	line-height: 45px;
+	width: 45px;
+	height: 45px;
+    border-radius: 50%;
+    text-align: center;
+}
+.footer .footer-socials a:hover {
+    background-color: #fed136;
+    color: #002e5b;
+}

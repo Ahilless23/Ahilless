@@ -1,0 +1,43 @@
+/* Main Navigation */
+
+.navbar {
+    width: 100%;
+    display: table;
+    background:url(../images/overlay.png) #002e5b;
+}
+
+.navbar-items {
+    float: right;
+    margin-top: 0%;
+    padding-right: 2em;
+}
+
+.logo {
+    margin-left: 2em;
+    display: inline-block;
+    padding: 10px 0px;
+}
+
+.navbar-items li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 2em;    
+    padding: 10px 10px; 
+}
+
+.navbar a {
+    color:#eee;
+    padding: 10px 20px;
+    font-size: 1.2em;
+}
+
+a, a:hover, a:focus, a:active, a.active {
+	outline: 0;
+    text-decoration: none;
+}
+
+.navbar a:hover, .navbar a:focus, .navbar a:active, .navbar a.active {
+    color: #fed136;
+    background: rgba(188, 202, 206, 0.15);
+    text-decoration: underline;
+}
