@@ -1,0 +1,163 @@
+/* blog-post */
+.header {
+    color: #fff;
+    text-align: center;
+    padding: 6em 0;
+    background-attachment: fixed;
+	background-color: #025a1ff1;
+	background-image: url("../images/3.jpg");
+	background-size: cover;
+}
+
+.header-content {
+    color: #fff;
+    text-align: center;
+    padding: 3em;
+}
+
+.wrapper {
+    margin-bottom: 5em;
+    padding: 1em;
+}
+
+.blog-post {
+	padding-bottom: 0.8em;
+	margin-bottom: 1.8em;
+}
+.blog-post header { 
+    height: auto; 
+}
+
+.blog-post--meta ul {
+	margin: 0.4em 0 1.1em;
+	color: #B7B9BD;
+	line-height: 1.8em;
+}
+
+.blog-post--meta ul li {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+.blog-post--meta ul li a { 
+    color: #B7B9BD; 
+}
+
+
+p {
+    margin: 0.5em;
+}
+
+
+/*- Sidebar -*/
+.sidebar-title {
+	background-color: #025a1ff1;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 800;
+	letter-spacing: 0.8px;
+	font-size: 14px;
+	padding: 15px 0;
+	margin: 2em 0 25px;
+}
+.sidebar-widget {
+    margin-bottom: 40px;
+    width: 100%;
+}
+.sidebar-widget li {
+	font-size: 17px;
+	margin-bottom: 10px;
+}
+
+.widget-break-news img {
+	width: 100%;
+}
+.widget-break-news h4 {
+	text-align: center;
+	margin: 20px 0 5px;
+}
+
+.widget-break-news p {
+	margin-top: 10px;
+	font-size: 17px;
+	line-height: 24px;
+	color: #000000;
+}
+
+.widget-post {
+	display: table;
+	margin: 0 0 20px 0;
+	border-bottom: 1px solid;
+	border-color: #E4E4E4;
+	padding-bottom: 20px;
+	width: 100%;
+}
+
+.widget-post .post-image {
+	float: left;
+	width: 90px;
+	vertical-align: middle;
+	position: relative;
+	margin-right: 20px;
+}
+
+.widget-review .post-image {
+	width: 70px;
+	margin-right: 15px;
+}
+
+.widget-post .post-body {
+	overflow: hidden;
+}
+
+.widget-post h2 {
+	margin: 0;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 20px;
+}
+
+.widget-post h2 a {
+	color: #4A4A4A;
+}
+
+.widget-post h2 a:hover {
+	color: #969696;
+}
+
+.widget-post .post-meta {
+	margin-top: 5px;
+	font-weight: 400;
+	font-size: 11px;
+	color: #B1B1B1;
+	font-family: "Lora";
+	font-style: italic;
+}
+
+.widget-post .post-meta span {
+	margin-right: 8px;
+}
+
+.widget-post .post-meta span a {
+	color: #B1B1B1;
+}
+
+.section-title {
+	margin: 0 0 45px 0;
+	border-top: 1px solid #505050;
+	font-size: 28px;
+	padding-top: 10px;
+	font-weight: 300;
+	color: #272727;
+}
+
+.widget-container ul{
+    list-style: none;
+    color: #272727;
+}
+
+.widget-container ul li a{
+    color: #272727;
+}

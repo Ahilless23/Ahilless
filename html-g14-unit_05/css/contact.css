@@ -1,0 +1,226 @@
+.header {
+    color: #fff;
+    text-align: center;
+    padding: 6em 0;
+    background-attachment: fixed;
+	background-color: #025a1ff1;
+	background-image: url("../images/3.jpg");
+	background-size: cover;
+}
+
+/* Form */
+
+form {
+    margin: 0 0 2em 0;
+}
+
+label {
+    color: #787878;
+    display: block;
+    font-size: 0.9em;
+    font-weight: 400;
+    margin: 0 0 1em 0;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select,
+textarea {
+    background: #f7f7f7;
+    border-radius: 0.35em;
+    border: solid 2px transparent;
+    color: inherit;
+    display: block;
+    outline: 0;
+    padding: 0 0.75em;
+    text-decoration: none;
+    width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #025a1ff1;
+}
+
+
+select option {
+    color: #787878;
+    background: #fff;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
+    height: 2.75em;
+}
+
+textarea {
+    padding: 0.75em;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    display: block;
+    float: left;
+    margin-right: -2em;
+    opacity: 0;
+    width: 1em;
+    z-index: -1;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+    text-decoration: none;
+    color: #a2a2a2;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 400;
+    padding-left: 2.4em;
+    padding-right: 0.75em;
+    position: relative;
+}
+
+input[type="checkbox"] + label:before,
+input[type="radio"] + label:before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    text-transform: none !important;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+
+input[type="checkbox"] + label:before,
+input[type="radio"] + label:before {
+    background: #f7f7f7;
+    border-radius: 0.35em;
+    border: solid 2px transparent;
+    content: '';
+    display: inline-block;
+    font-size: 0.8em;
+    height: 2.0625em;
+    left: 0;
+    line-height: 1.85625em;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 2.0625em;
+}
+
+input[type="checkbox"]:checked + label:before,
+input[type="radio"]:checked + label:before {
+    background: #787878;
+    border-color: #787878;
+    color: #fff;
+    content: '\f00c';
+}
+
+input[type="checkbox"]:focus + label:before,
+input[type="radio"]:focus + label:before {
+    border-color: #025a1ff1;
+}
+
+input[type="checkbox"] + label:before {
+    border-radius: 0.35em;
+}
+
+input[type="radio"] + label:before {
+    border-radius: 100%;
+}
+
+/* Actions */
+
+ul.actions {
+    display: inline-block;
+    cursor: default;
+    list-style: none;
+    margin-left: -1em;
+    padding-left: 0;
+}
+
+ul.actions li {
+    padding: 0 0 0 1em;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+@media screen and (max-width: 480px) {
+    ul.actions li{
+        display: block;
+        margin-left: 0;
+        width: 100% !important;
+    }
+
+}
+/* Button */
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+.button {
+    background-color: transparent;
+    border-radius: 0.35em;
+    border: solid 3px #efefef;
+    color: #787878 !important;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    height: 3.15em;
+    height: calc(2.75em + 6px);
+    line-height: 2.75em;
+    min-width: 10em;
+    padding: 0 1.5em;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:hover {
+    border-color: #025a1ff1;
+    color: #025a1ff1 !important;
+}
+
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active,
+.button:active {
+    background-color: rgba(73, 191, 157, 0.1);
+    border-color: #025a1ff1;
+    color: #025a1ff1 !important;
+}
+
+input[type="submit"].primary,
+input[type="reset"].primary,
+input[type="button"].primary,
+.button.primary {
+    background-color: #025a1ff1;
+    border-color: #025a1ff1;
+    color: #ffffff !important;
+}
+
+input[type="submit"].primary:hover,
+input[type="reset"].primary:hover,
+input[type="button"].primary:hover,
+.button.primary:hover {
+    background-color: #025a1ff1;
+    border-color: #025a1ff1;
+}
+
+input[type="submit"].primary:active,
+input[type="reset"].primary:active,
+input[type="button"].primary:active,
+.button.primary:active {
+    background-color: #025a1ff1;
+    border-color: #025a1ff1;
+}

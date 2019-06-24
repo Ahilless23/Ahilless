@@ -1,0 +1,133 @@
+/* Main Navigation */
+
+.navbar {
+    width: 100%;
+    display: table;
+    background:url(../images/overlay.png) #025a1ff1;
+}
+
+.navbar-items {
+    float: right;
+    margin-top: 0%;
+    padding-right: 2em;
+}
+
+.logo {
+    margin-left: 2em;
+    display: inline-block;
+    padding: 10px 0px;
+}
+
+.navbar-items li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 2em;    
+    padding: 10px 10px; 
+}
+
+.navbar a {
+    color:#eee;
+    padding: 10px 20px;
+    font-size: 1.2em;
+}
+
+a, a:hover, a:focus, a:active, a.active {
+	outline: 0;
+    text-decoration: none;
+}
+
+.navbar a:hover, .navbar a:focus, .navbar a:active, .navbar a.active {
+    color: #fed136;
+    background: rgba(188, 202, 206, 0.15);
+    text-decoration: underline;
+}
+
+.navbar label {
+    display: none;
+    font-size: 30px;
+    position: fixed;
+    padding: 2px 10px 5px 5px;
+    top: 8px;
+    left: 0;
+    cursor: pointer;
+    z-index: 50;
+}
+
+.navbar input[type="checkbox"] + label {
+    color: #fff;
+} 
+
+.navbar input[type="checkbox"]:checked + label {
+    color: #fed136;
+    font-style: normal;
+} 
+
+.navbar input[type="checkbox"] {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 736px) {
+    .navbar {
+        display: block;
+        background: #025a1ff1;
+        height: 50px; 
+    }
+    .navbar label {
+      display: block;
+    }
+    .navbar input[type="checkbox"]:checked ~.navbar-items  {
+        left: 0;
+    }
+   .navbar .navbar-items {
+     float: left;
+    }
+}
+
+
+
+/* screenwidth less than 736px - mobile/smaller tablets
+---------------------------------------------------------------------- */
+@media only screen and (max-width: 736px) {
+
+    /* mobile navigation */
+    .navbar .navbar-items {
+         position: fixed;
+         left: -250px;
+         top: 50px;
+         bottom: 0;
+         width: 230px;
+         margin: 0;
+         background: #025a1ff1;
+         box-shadow: 2px 2px 5px #9FCC7F;
+    }
+ 
+     /* remove float left on 1st level list items */
+     ul.navbar-items > li { float: none; }
+ 
+     ul.navbar-items > li {
+         display: block;
+         height: auto;      
+         text-align: left;
+         border-bottom: 1px dotted #D3D5DA;
+         padding: 6px;
+     }
+ 
+     ul.navbar-items > li:first-child {
+         border-top: 1px dotted #D3D5DA;
+     }
+     
+     ul.navbar-items li a {  
+         display: block;   
+         width: auto;  
+         padding: 1em 0.5em;
+         line-height: 16px; /* reset line-height from 40px */
+         border: none;
+     } 
+     ul.navbar-items li.active > a {
+         padding: 1em 0.5em;
+         color: #fed136;
+     } 
+ }
+ 
